@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфолио | Веб-разработчик</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <div class="logo">DevPortfolio</div>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home">Головна</a></li>
+          <li><a href="#about">Про мене</a></li>
+          <li><a href="#portfolio">Портфоліо</a></li>
+          <li><a href="#contact">Контакти</a></li>
+        </ul>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <button class="theme-toggle" id="themeToggle" title="Перемкнути тему">
+            <span class="sun">☀️</span>
+            <span class="moon">🌙</span>
+          </button>
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Меню" style="display: none; background: none; border: 1px solid var(--border-color); border-radius: 8px; width: 40px; height: 40px; cursor: pointer; color: var(--text-primary); font-size: 20px; align-items: center; justify-content: center;">
+            ☰
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Создаю <span class="gradient-text">красивые</span> и функциональные сайты
+        </h1>
+        <p class="hero-subtitle">
+          Веб-разработчик с фокусом на современный дизайн и чистый код
+        </p>
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn btn-primary">Мои работы</a>
+          <a href="#contact" class="btn btn-secondary">Связаться</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">Обо мне</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Привет! Я веб-разработчик, создаю современные сайты и веб-приложения.</p>
+          <p>Специализируюсь на разработке адаптивных интерфейсов с отличным пользовательским опытом.</p>
+        </div>
+        <div class="skills">
+          <h3>Технологии:</h3>
+          <div class="skills-grid">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="section-title">Портфолио</h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Все</button>
+        <button class="filter-btn" data-filter="landing">Лендинги</button>
+        <button class="filter-btn" data-filter="webapp">Веб-приложения</button>
+        <button class="filter-btn" data-filter="ecommerce">Магазины</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Projects will be rendered here by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Контакты</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="icon">📧</span>
+            <a href="mailto:your.email@example.com">your.email@example.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="icon">💬</span>
+            <a href="https://t.me/yourusername" target="_blank">@yourusername</a>
+          </div>
+          <div class="contact-item">
+            <span class="icon">🐙</span>
+            <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Все права защищены</p>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

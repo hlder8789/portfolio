@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Портфоліо | Веб-розробник</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="mobile-style.css">
+</head>
+<body>
+
+  <!-- Mobile Header Fixed -->
+  <header class="mobile-header">
+    <div class="header-content">
+      <h1 class="mobile-logo">Portfolio</h1>
+      <button class="menu-btn" id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-menu" id="closeMenu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <nav class="menu-nav">
+      <a href="#hero" class="menu-link">Головна</a>
+      <a href="#about" class="menu-link">Про мене</a>
+      <a href="#projects" class="menu-link">Роботи</a>
+      <a href="#contact" class="menu-link">Контакти</a>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="mobile-hero" id="hero">
+    <div class="hero-badge">
+      <i class="fa-solid fa-circle"></i> Відкритий для проєктів
+    </div>
+    <h2 class="hero-title">Створюю <span class="highlight">сучасні</span> сайти для бізнесу</h2>
+    <p class="hero-text">Веб-розробник з фокусом на якість, швидкість та зручність</p>
+
+    <div class="hero-stats">
+      <div class="stat">
+        <strong>30+</strong>
+        <span>Проєктів</span>
+      </div>
+      <div class="stat">
+        <strong>100%</strong>
+        <span>Задоволених клієнтів</span>
+      </div>
+      <div class="stat">
+        <strong>4+</strong>
+        <span>Років досвіду</span>
+      </div>
+    </div>
+
+    <a href="#projects" class="cta-btn">
+      <i class="fa-solid fa-briefcase"></i> Дивитись роботи
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section class="mobile-section" id="about">
+    <h3 class="section-title">Про мене</h3>
+    <div class="about-card">
+      <p class="about-text">
+        Привіт! Я веб-розробник та дизайнер. Створюю адаптивні сайти, лендінги, інтернет-магазини та веб-сервіси під ключ.
+      </p>
+      <p class="about-text">
+        Спеціалізуюсь на чистому коді, швидкій верстці та сучасних технологіях для створення якісних продуктів.
+      </p>
+    </div>
+
+    <div class="skills-title">Технології та інструменти:</div>
+    <div class="skills-tags">
+      <span class="skill">HTML5</span>
+      <span class="skill">CSS3</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">React</span>
+      <span class="skill">Node.js</span>
+      <span class="skill">Figma</span>
+      <span class="skill">Git</span>
+      <span class="skill">Responsive</span>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="mobile-section" id="projects">
+    <h3 class="section-title">Мої роботи</h3>
+    <p class="section-subtitle">Тапніть на проєкт, щоб переглянути деталі</p>
+
+    <div class="projects-list" id="projectsList">
+      <!-- Projects rendered by JS -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="mobile-section" id="contact">
+    <h3 class="section-title">Контакти</h3>
+    <p class="section-subtitle">Зв'яжіться зі мною для обговорення проєкту</p>
+
+    <div class="contact-links">
+      <a href="mailto:your.email@example.com" class="contact-card">
+        <div class="contact-icon">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="contact-info">
+          <strong>Email</strong>
+          <span>your.email@example.com</span>
+        </div>
+      </a>
+
+      <a href="https://t.me/yourusername" target="_blank" class="contact-card">
+        <div class="contact-icon telegram">
+          <i class="fa-brands fa-telegram"></i>
+        </div>
+        <div class="contact-info">
+          <strong>Telegram</strong>
+          <span>@yourusername</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/yourusername" target="_blank" class="contact-card">
+        <div class="contact-icon github">
+          <i class="fa-brands fa-github"></i>
+        </div>
+        <div class="contact-info">
+          <strong>GitHub</strong>
+          <span>github.com/yourusername</span>
+        </div>
+      </a>
+
+      <a href="tel:+380991234567" class="contact-card">
+        <div class="contact-icon phone">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <div class="contact-info">
+          <strong>Телефон</strong>
+          <span>+380 (99) 123-45-67</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mobile-footer">
+    <p>© 2026 Всі права захищено</p>
+    <p>Створено з ❤️ для якісного веб-розробки</p>
+  </footer>
+
+  <!-- Project Detail Modal -->
+  <div class="project-modal" id="projectModal">
+    <div class="modal-header">
+      <button class="modal-close" id="modalClose">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="modal-content" id="modalContent">
+      <!-- Content loaded by JS -->
+    </div>
+  </div>
+
+  <script src="mobile-script.js"></script>
+</body>
+</html>
