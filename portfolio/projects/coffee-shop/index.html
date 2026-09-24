@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZERNO & PECH | Спешелті кав'ярня та реміснича пекарня у Києві</title>
+  <meta name="description" content="Чесна спешелті кава власного обсмаження та хліб на 36-годинній заквасці у центрі Києва. Свіжа випічка щоранку.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <span><i class="fa-solid fa-croissant"></i> Свіжа випічка щоранку з 08:00 у центрі Києва</span>
+      <div class="top-bar-contact">
+        <a href="tel:+380442234578"><i class="fa-solid fa-phone"></i> +380 44 223 45 78</a>
+        <span>вул. Велика Васильківська, 36</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo">
+        <span class="logo-mark"><i class="fa-solid fa-mug-hot"></i></span>
+        <div class="logo-text">
+          <span class="brand-name">ZERNO & PECH</span>
+          <span class="brand-sub">BAKERY & SPECIALTY COFFEE</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Головна</a>
+        <a href="#menu" class="nav-link">Меню</a>
+        <a href="#about" class="nav-link">Про нас</a>
+        <a href="#reviews" class="nav-link">Відгуки</a>
+        <a href="#contacts" class="nav-link">Контакти</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-outline book-btn" id="openBookModalBtn">
+          <i class="fa-regular fa-calendar-check"></i> Бронь столика
+        </button>
+        <button class="cart-btn" id="openCartBtn" aria-label="Кошик замовлення">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span> 100% Арабіка власного обсмаження
+        </div>
+        <h1 class="hero-title">
+          Чесна спешелті кава та ремісничий хліб у серці Києва
+        </h1>
+        <p class="hero-desc">
+          Ми обсмажуємо зерно мікролотів із Колумбії та Кенії, а наш хліб ферментується 36 годин на живій заквасці без дріжджів та хімічних домішок.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">
+            <i class="fa-solid fa-utensils"></i> Дивитись меню
+          </a>
+          <button class="btn btn-glass" id="heroBookBtn">
+            <i class="fa-regular fa-clock"></i> Замовити з собою
+          </button>
+        </div>
+
+        <div class="hero-features">
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-seedling"></i></div>
+            <div class="feature-info">
+              <strong>Свіже зерно</strong>
+              <span>Обсмажування кожні 4 дні</span>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-bread-slice"></i></div>
+            <div class="feature-info">
+              <strong>36 годин ферментації</strong>
+              <span>Жива закваска San Francisco</span>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="feature-info">
+              <strong>Q-Grader бариста</strong>
+              <span>Переможці чемпіонатів України</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card-preview">
+        <div class="preview-box">
+          <img src="https://images.unsplash.com/photo-1509785307050-d4066910ec1e?auto=format&fit=crop&w=800&q=80" alt="Спешелті кава Zerno & Pech" class="preview-img">
+          <div class="preview-tag">
+            <i class="fa-solid fa-star"></i> Топ вибір гостей: <strong>Мигдальний круасан & Фільтр</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU SECTION -->
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-pill">Наше меню</span>
+        <h2 class="section-heading">Створено з любов'ю до деталей</h2>
+        <p class="section-sub">Усі страви та напої готуються виключно зі свіжих фермерських продуктів та якісного зерна</p>
+      </div>
+
+      <!-- Menu Tabs -->
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-tab="coffee"><i class="fa-solid fa-mug-saucer"></i> Кава & Напої</button>
+        <button class="menu-tab" data-tab="breakfast"><i class="fa-solid fa-egg"></i> Сніданки (весь день)</button>
+        <button class="menu-tab" data-tab="bakery"><i class="fa-solid fa-bread-slice"></i> Випічка & Десерти</button>
+        <button class="menu-tab" data-tab="signature"><i class="fa-solid fa-wand-magic-sparkles"></i> Авторські напої</button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid" id="menuGrid">
+        <!-- Coffee items -->
+        <div class="menu-card" data-category="coffee">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Фільтр-кава Ефіопія">
+            <span class="card-badge">Хіт</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="item-title">Фільтр-кава Ефіопія Іргачеф</h3>
+              <span class="item-price">75 ₴</span>
+            </div>
+            <p class="item-desc">Яскраві ноти бергамоту, стиглого персика та чорного чаю. Світле обсмаження.</p>
+            <div class="menu-card-footer">
+              <span class="item-weight"><i class="fa-regular fa-clock"></i> 200 мл</span>
+              <button class="add-to-cart-btn" data-id="1" data-title="Фільтр-кава Ефіопія Іргачеф" data-price="75">
+                <i class="fa-solid fa-plus"></i> Додати
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="coffee">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=600&q=80" alt="Капучино">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="item-title">Капучино на вівсяному</h3>
+              <span class="item-price">89 ₴</span>
+            </div>
+            <p class="item-desc">Подвійний шот еспресо з шовковистою піною безлактозного вівсяного молока Oatly.</p>
+            <div class="menu-card-footer">
+              <span class="item-weight"><i class="fa-regular fa-clock"></i> 250 мл</span>
+              <button class="add-to-cart-btn" data-id="2" data-title="Капучино на вівсяному" data-price="89">
+                <i class="fa-solid fa-plus"></i> Додати
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="coffee">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=600&q=80" alt="Флет Вайт">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="item-title">Флет Вайт (Двойной шот)</h3>
+              <span class="item-price">85 ₴</span>
+            </div>
+            <p class="item-desc">Щільний насичений смак кави з тонким шаром молочної мікропіни. Бленд Колумбія/Гватемала.</p>
+            <div class="menu-card-footer">
+              <span class="item-weight"><i class="fa-regular fa-clock"></i> 180 мл</span>
+              <button class="add-to-cart-btn" data-id="3" data-title="Флет Вайт" data-price="85">
+                <i class="fa-solid fa-plus"></i> Додати
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Signature -->
+        <div class="menu-card" data-category="signature">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=600&q=80" alt="Раф Солона карамель">
+            <span class="card-badge new">Авторський</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="item-title">Раф Солона карамель & Пекан</h3>
+              <span class="item-price">115 ₴</span>
+            </div>
+            <p class="item-desc">Ніжні вершки, збиті з еспресо, домашньою карамеллю з морською сіллю та горіхом пекан.</p>
+            <div class="menu-card-footer">
+              <span class="item-weight"><i class="fa-regular fa-clock"></i> 300 мл</span>
+              <button class="add-to-cart-btn" data-id="4" data-title="Раф Солона карамель & Пекан" data-price="115">
+                <i class="fa-solid fa-plus"></i> Додати
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Breakfasts -->
+        <div class="menu-card" data-category="breakfast">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=80" alt="Тартін з лососем">
+            <span class="card-badge">Топ сніданок</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="item-title">Тартін з авокадо та лососем</h3>
+              <span class="item-price">185 ₴</span>
+            </div>
+            <p class="item-desc">Хліб на заквасці, гуакамоле, яйце пашот, слабосолоний лосось, мікрогрін та насіння льону.</p>
+            <div class="menu-card-footer">
+              <span class="item-weight"><i class="fa-solid fa-utensils"></i> 260 г</span>
+              <button class="add-to-cart-btn" data-id="5" data-title="Тартін з авокадо та лососем" data-price="185">
+                <i class="fa-solid fa-plus"></i> Додати
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="breakfast">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=600&q=80" alt="Сирники">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="item-title">Сирники з вишневим кюлі</h3>
+              <span class="item-price">135 ₴</span>
+            </div>
+            <p class="item-desc">Ніжні сирники з фермерського сиру, подаються зі сметаною, вишневим соусом та мигдальними пластівцями.</p>
+            <div class="menu-card-footer">
+              <span class="item-weight"><i class="fa-solid fa-utensils"></i> 230 г</span>
+              <button class="add-to-cart-btn" data-id="6" data-title="Сирники з вишневим кюлі" data-price="135">
+                <i class="fa-solid fa-plus"></i> Додати
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bakery -->
+        <div class="menu-card" data-category="bakery">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="Мигдальний круасан">
+            <span class="card-badge">Хіт пекарні</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="item-title">Круасан з мигдальним франжипаном</h3>
+              <span class="item-price">85 ₴</span>
+            </div>
+            <p class="item-desc">Класичний листковий круасан на вершковому маслі 82.5%, просочений ромовим сиропом та кремом з мигдалю.</p>
+            <div class="menu-card-footer">
+              <span class="item-weight"><i class="fa-solid fa-bread-slice"></i> 140 г</span>
+              <button class="add-to-cart-btn" data-id="7" data-title="Мигдальний круасан" data-price="85">
+                <i class="fa-solid fa-plus"></i> Додати
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-category="bakery">
+          <div class="menu-card-img">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Хліб Тартин">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="item-title">Ремісничий Тартин (буханець)</h3>
+              <span class="item-price">95 ₴</span>
+            </div>
+            <p class="item-desc">Цільнозернове та пшеничне борошно жорнового помелу, 36 годин визрівання, хрустка карамельна скоринка.</p>
+            <div class="menu-card-footer">
+              <span class="item-weight"><i class="fa-solid fa-bread-slice"></i> 650 г</span>
+              <button class="add-to-cart-btn" data-id="8" data-title="Ремісничий Тартин" data-price="95">
+                <i class="fa-solid fa-plus"></i> Додати
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="img-box main-img">
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&q=80" alt="Бариста готує каву">
+          </div>
+          <div class="img-box floating-img">
+            <img src="https://images.unsplash.com/photo-1509785307050-d4066910ec1e?auto=format&fit=crop&w=600&q=80" alt="Процес випічки хліба">
+          </div>
+          <div class="experience-badge">
+            <span class="exp-number">5</span>
+            <span class="exp-text">років затишку та безкомпромісної якості</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-pill">Наша філософія</span>
+          <h2 class="about-heading">Ми віримо, що справжня кава і хліб не терплять поспіху</h2>
+          <p class="about-text">
+            <strong>ZERNO & PECH</strong> народився у 2021 році як невелика мрія двох друзів — бариста та пекаря. Ми втомилися від промислового хліба та пересмаженої гіркої кави.
+          </p>
+          <p class="about-text">
+            Наш шеф-бариста <strong>Олексій Коваленко</strong> особисто купує зелене зерно мікролотів на аукціонах у Колумбії, Ефіопії та Кенії. Ми використовуємо професійний ростер Giesen та екстрагуємо еспресо на легендарній кавомашині La Marzocco KB90.
+          </p>
+
+          <div class="about-points">
+            <div class="point-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <div>
+                <strong>Без хімії та цукру в хлібі</strong>
+                <p>Тільки борошно, артезіанська вода, морська сіль та час.</p>
+              </div>
+            </div>
+            <div class="point-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <div>
+                <strong>Pet-friendly простір</strong>
+                <p>Завжди раді вашим чотирилапим друзям з мисочкою свіжої води.</p>
+              </div>
+            </div>
+            <div class="point-item">
+              <i class="fa-solid fa-check-circle"></i>
+              <div>
+                <strong>Генератор & Starlink</strong>
+                <p>Працюємо без перебоїв у будь-яких умовах.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS SECTION -->
+  <section class="section reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-pill">Відгуки гостей</span>
+        <h2 class="section-heading">Оцінка 4.9 ★ на Google Maps</h2>
+        <p class="section-sub">Більше ніж 280 живих відгуків від справжніх поціновувачів кави</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar">КВ</div>
+            <div class="reviewer-meta">
+              <strong>Катерина Василенко</strong>
+              <div class="stars">★★★★★ <span class="review-date">12 вер 2026</span></div>
+            </div>
+            <i class="fa-brands fa-google google-icon"></i>
+          </div>
+          <p class="review-body">
+            «Найкращий тартін з лососем у центрі Києва! А фільтр на Ефіопії — це просто любов. Приходжу сюди майже щоранку попрацювати з ноутбуком. Інтернет літає, атмосфера неймовірно затишна.»
+          </p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar">МС</div>
+            <div class="reviewer-meta">
+              <strong>Михайло Сергієнко</strong>
+              <div class="stars">★★★★★ <span class="review-date">28 сер 2026</span></div>
+            </div>
+            <i class="fa-brands fa-google google-icon"></i>
+          </div>
+          <p class="review-body">
+            «Мигдальний круасан просто нереальний, як у найкращих пекарнях Парижа. Дуже приємні хлопці-бариста, завжди розкажуть про зерно та порекомендують щось нове.»
+          </p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar">ОД</div>
+            <div class="reviewer-meta">
+              <strong>Ольга Дмитренко</strong>
+              <div class="stars">★★★★★ <span class="review-date">5 сер 2026</span></div>
+            </div>
+            <i class="fa-brands fa-google google-icon"></i>
+          </div>
+          <p class="review-body">
+            «Беру тут ремісничий хліб додому двічі на тиждень. Він зберігає хрусткість кілька днів і неймовірно пахне. Дякую за чесну якість та любов до своєї справи!»
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & RESERVATION SECTION -->
+  <section class="section contacts-section" id="contacts">
+    <div class="container">
+      <div class="contact-box-grid">
+        <div class="contact-info-col">
+          <span class="section-pill">Чекаємо в гості</span>
+          <h2 class="contact-title">Завітайте на філіжанку кави</h2>
+          <p class="contact-intro">Ми розташовані в затишному історичному дворику неподалік від метро Олімпійська.</p>
+
+          <div class="contact-items">
+            <div class="c-item">
+              <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong>Адреса:</strong>
+                <span>м. Київ, вул. Велика Васильківська, 36</span>
+              </div>
+            </div>
+            <div class="c-item">
+              <div class="c-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <strong>Графік роботи:</strong>
+                <span>Пн - Пт: 08:00 – 22:00<br>Сб - Нд: 09:00 – 23:00</span>
+              </div>
+            </div>
+            <div class="c-item">
+              <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <strong>Телефон & Бронь:</strong>
+                <a href="tel:+380442234578">+380 44 223 45 78</a>
+              </div>
+            </div>
+            <div class="c-item">
+              <div class="c-icon"><i class="fa-brands fa-telegram"></i></div>
+              <div>
+                <strong>Telegram канал:</strong>
+                <a href="https://t.me/zerno_pech_kyiv" target="_blank">@zerno_pech_kyiv</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reservation Form -->
+        <div class="reservation-card">
+          <h3>Забронювати столик</h3>
+          <p>Залиште контактні дані — ми підтвердимо бронь за 5 хвилин</p>
+
+          <form id="bookingForm" class="booking-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Ваше ім'я *</label>
+                <input type="text" id="bookName" placeholder="Олександр" required>
+              </div>
+              <div class="form-group">
+                <label>Телефон *</label>
+                <input type="tel" id="bookPhone" placeholder="+380 (XX) XXX-XX-XX" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Дата *</label>
+                <input type="date" id="bookDate" required>
+              </div>
+              <div class="form-group">
+                <label>Час *</label>
+                <input type="time" id="bookTime" value="12:00" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Кількість гостей</label>
+              <select id="bookGuests">
+                <option value="1">1 гість (з ноутбуком)</option>
+                <option value="2" selected>2 гостей</option>
+                <option value="3-4">3–4 гості</option>
+                <option value="5+">Компанія 5+ осіб</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit-btn">
+              <i class="fa-solid fa-check"></i> Підтвердити бронювання
+            </button>
+          </form>
+
+          <div class="form-success" id="bookSuccess" style="display: none;">
+            <i class="fa-solid fa-circle-check"></i>
+            <h4>Столик успішно заброньовано!</h4>
+            <p>Ми надіслали SMS із підтвердженням. Чекаємо на вас!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <strong>ZERNO & PECH</strong>
+          <p>Спешелті кав'ярня та пекарня</p>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 ТОВ «Зерно та Піч» ЄДРПОУ 43928174. Усі права захищено.</p>
+        <p>м. Київ, вул. Велика Васильківська, 36</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART DRAWER MODAL -->
+  <div class="cart-modal-backdrop" id="cartModal">
+    <div class="cart-drawer">
+      <div class="cart-header">
+        <h3><i class="fa-solid fa-bag-shopping"></i> Ваше замовлення</h3>
+        <button class="cart-close" id="closeCartBtn">&times;</button>
+      </div>
+      <div class="cart-items" id="cartItemsList">
+        <div class="empty-cart-msg">Ваш кошик поки порожній. Оберіть смачненьке в меню!</div>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total-row">
+          <span>Разом до сплати:</span>
+          <strong id="cartTotalSum">0 ₴</strong>
+        </div>
+        <button class="btn btn-primary checkout-btn" id="checkoutBtn" disabled>
+          Оформити самовивіз
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
